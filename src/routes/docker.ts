@@ -19,7 +19,7 @@ router.get("/container", (req, res) => {
             if (result) {
                 res.status(200).send("Container is running");
             } else {
-                res.status(404).send("Container is not running");
+                res.status(400).send("Container is not running");
             }
         }
     });
