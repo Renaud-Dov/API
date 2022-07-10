@@ -18,4 +18,4 @@ RUN npx tsc
 
 EXPOSE 3000
 ENV HOSTNAME='0.0.0.0'
-CMD [ "node","src/main.js" ]
+CMD [ "node","src/app.js" ]
