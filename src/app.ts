@@ -42,5 +42,5 @@ app.use((err: any, req: Request, res: Response) => {
 });
 
 app.listen(port, hostname, () => {
-    console.log(`Example app listening on port ${port}`)
+    console.log(`App listening on port ${port}`)
 })
