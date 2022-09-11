@@ -3,12 +3,14 @@ import path from "path";
 import cookieParser from "cookie-parser";
 import logger from "morgan";
 import cors from "cors";
+import compression from "compression";
 
 const app = express();
 const port = parseInt(process.env.PORT || "3000");
 const hostname = process.env.HOSTNAME || 'localhost'
 
 app.use(cors())
+app.use(compression())
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 app.use(logger('dev'));
