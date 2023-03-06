@@ -25,7 +25,7 @@ app.use(express.static('src/public'));
 const indexRouter = require('./routes');
 const dockerRouter = require('./routes/docker');
 app.use('/', indexRouter);
-app.use('/docker', dockerRouter);
+// app.use('/docker', dockerRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req: Request, res: Response) {
